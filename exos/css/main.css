@@ -1,0 +1,26 @@
+#title {
+    text-align: right;
+}
+
+.center {
+    text-align: center !important;
+}
+
+table {
+    margin-left: 2px;
+    margin: right 2px;;
+    border: 1px dashed purple;
+    border-radius: 20px;
+    width: 100%;
+    border-radius: 80px;
+}
+
+.flex {
+    display: flex;
+    border: 1px solid #000;
+    justify-content: space-around;
+}
+
+.left, .right {
+    width: 30%;
+}

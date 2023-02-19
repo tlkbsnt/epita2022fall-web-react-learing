@@ -1,0 +1,19 @@
+FROM node:lts
+
+WORKDIR /app
+
+COPY ./front/package.json ./
+
+ENV PATH /app/node_modules/.bin:$PATH
+
+RUN npm install -g npm@latest
+
+RUN yarn install
+
+RUN yarn add vite -g
+
+COPY front ./
+
+EXPOSE 3000
+
+CMD ["yarn", "dev", "--host"]
